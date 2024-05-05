@@ -10,9 +10,15 @@ npm install @arindam1729/devtoblog
 
 ## Usage
 
+import the package and use the `getBlog` and `postBlog` functions to interact with the dev.to API.
+
 ```javascript
 const { getBlog, postBlog } = require('@arindam1729/devtoblog');
+```
 
+Get the list of published blog articles and post a new blog article using the following code:
+
+```javascript
 // Retrieve a list of published blog articles
 const apiKey = 'YOUR_API_KEY';
 getBlog(apiKey)
@@ -23,9 +29,15 @@ getBlog(apiKey)
     console.error(error);
   });
 
+```
+
+Publish a new blog article using the following code:
+
+```javascript
+
 // Post a blog article
 
-  const article: {
+  const article = {
     body_markdown: "###  content for the body markdown. It can contain various details, sections, and formatting like headers, lists, and more.",
     description: "A brief overviecontent and its purpose",
     published: true,
@@ -43,9 +55,9 @@ postBlog(article, apiKey)
   });
 ```
 
-## API
+## Functions
 
-### `getBlog(apiKey: string): Promise<Array>`
+ 1. getBlog(apiKey: string): Promise<Array>
 
 Retrieves a list of published blog articles from the dev.to API.
 
@@ -53,7 +65,8 @@ Retrieves a list of published blog articles from the dev.to API.
 
 Returns a promise that resolves to an array of blog articles.
 
-### `postBlog(article: Object, apiKey: string): Promise<Object>`
+ 2. postBlog(article: Object, apiKey: string): Promise<Object>
+
 
 Posts a blog article to the dev.to API.
 
@@ -61,6 +74,7 @@ Posts a blog article to the dev.to API.
 - `apiKey` - The API key required to access the dev.to API.
 
 Returns a promise that resolves to the response data from the API.
+
 
 ## License
 

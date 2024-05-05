@@ -1,7 +1,7 @@
 {
   "name": "@arindam1729/devtoblog",
   "version": "1.0.1",
-  "description": "Package to publish Blogs to Dev.to",
+  "description": "Package to publish and fetch Blogs to Dev.to",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
