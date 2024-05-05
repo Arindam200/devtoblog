@@ -1,17 +1,17 @@
-# npm-package-name
+# @arindam1729/devtoblog
 
 A Node.js package for interacting with the dev.to API to retrieve and post blog articles.
 
 ## Installation
 
 ```bash
-npm install npm-package-name
+npm install @arindam1729/devtoblog
 ```
 
 ## Usage
 
 ```javascript
-const { getBlog, postBlog } = require('npm-package-name');
+const { getBlog, postBlog } = require('@arindam1729/devtoblog');
 
 // Retrieve a list of published blog articles
 const apiKey = 'YOUR_API_KEY';
